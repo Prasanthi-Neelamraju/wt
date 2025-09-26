@@ -2,101 +2,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Team Details</title>
-    <style>
-        body {
-            font-family: "Segoe UI", sans-serif;
-            background: #f2f2f2;
-            margin: 0;
-            padding: 20px;
-        }
-
-        h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
+    <title>WT Project Team Details</title>
+<style>
+    body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+    }
+    th {
+        background: #ff4d4d;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 10px 15px;
+        border: 1px solid #333;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 90%;
+        background: #fff;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid #333;
+    }
+    table tbody td img {
+      width: 100px;
+      height: 150px;
+      object-fit:cover;
+      border-radius: 7px;
+      border: 2px solid #333;
+      display: block;
+      margin: 0 auto;
+  }
+    th, td {
+        border: 1px solid #333;
+        padding: 12px 15px;
+        vertical-align: middle;
+    }
+    .uni-info {
+        text-align: center;
+        background: #2c3e50;
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .uni-info img {
+        width: 80px;
+        height: 80px;
+        vertical-align: middle;
+        margin-right: 15px;
+    }
+    .course-info {
+        text-align: left;
+        font-size: 18px;
+        color: #2c3e50;
+        font-weight: normal;
+    }
+    .course-info h2, .course-info h3 {
+        margin: 5px 0;
+    }
+    .course-photo img {
+        width: 120px;
+        height: 150px;
+        border-radius: 10px;
+        border: 2px solid #333;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+    @media (max-width: 768px) {
         table {
-            border-collapse: collapse;
-            margin: auto;
-            width: 90%;
-            background: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            border: 2px solid #333;
+            width: 100%;
         }
-
-        th, td {
-            border: 1px solid #333;
-            text-align: center;
-            padding: 10px;
+        .course-info h2, .course-info h3 {
+            font-size: 16px;
         }
-
-        th {
-            background: #ff4d4d;
-            color: white;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        .uni-info {
+            font-size: 22px;
         }
-
-        tr:hover {
-            background: #f9f9f9;
+        .course-photo img {
+            width: 100px;
+            height: 125px;
         }
-
-        td img {
-            width: 120px;
-            height: 150px;
-            object-fit:fill;
-            border-radius: 8px;
-            border: 2px solid #333;
-        }
-
-        td[rowspan] {
-            font-weight: bold;
-        }
-
-        .team {
-            background: #cce6ff;
-        }
-
-        .project {
-            background: #fff8cc;
-        }
-        .team-end td {
-            border-bottom: 3px solid #000;
-        }
-
-        @media (max-width: 768px) {
-            table {
-                width: 100%;
-            }
-            th, td {
-                padding: 8px;
-                font-size: 14px;
-            }
-        }
-    </style>
-</head>
-<body>
-    <h2>Details of the Teams</h2>
+    }
+</style>
+<table>
+    <tr class="uni-info">
+        <td colspan="2">
+            <img src="srmap_logo.webp" alt="University Logo">
+            SRM UNIVERSITY-AP
+        </td>
+    </tr>
+    <tr>
+        <td class="course-info">
+            <h2>Course Name: Web Technology</h2>
+            <h3>Course Code: CSC 303</h3>
+            <h3>Course Instructor: Dr. Yara Srinivas</h3>
+        </td>
+        <td class="course-photo">
+            <img src="img.jpg" alt="Instructor Photo">
+        </td>
+    </tr>
+</table>
+    <h2 style="text-align:center;">Details of the Project Teams</h2>
     <table>
         <tr>
             <th>Team No.</th>
             <th>Name of the students</th>
             <th>Image</th>
             <th>Project</th>
+            <th>Update of the Project</th>
         </tr>
             <tr>
                 <td rowspan="4" bgcolor="lightblue">1.</td>
                 <td>Santhosh Reddy</td>
                 <td><img src="santhosh.jpg" alt="image" width="50"></td>
-                <td rowspan="4" bgcolor="lightyellow">Cashlens</td>
+                <td rowspan="4" bgcolor="lightyellow" align="center">Cashlens</td> 
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Prasanthi</td>
-                <td><img src="prasanthi - Copy.jpg" alt="image" width="50"></td>
+                <td><img src="my.jpg" alt="image" width="50"></td>
             </tr>
             <tr>
                 <td>Praneetha</td>
@@ -110,7 +139,8 @@
                 <td rowspan="4" bgcolor="lightblue">2.</td>
                 <td>Lakshmi Sai Reshmi</td>
                 <td><img src="reshmi.jpeg" alt="image" width="45"></td>
-                <td rowspan="4" bgcolor="lightyellow">Fitness</td>
+                <td rowspan="4" bgcolor="lightyellow" align="center">Fitness</td>
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Datha Sai</td>
@@ -128,7 +158,8 @@
                 <td rowspan="3" bgcolor="lightblue">3.</td>
                 <td>Gayathri</td>
                 <td><img src="gayathri.jpg" alt="image" width="50"></td>
-                <td rowspan="3" bgcolor="lightyellow">Food Bridge</td>
+                <td rowspan="3" bgcolor="lightyellow" align="center">Food Bridge</td>
+                 <td rowspan="3"></td>
             </tr>
             <tr>
                 <td>Nazma</td>
@@ -137,13 +168,13 @@
             <tr>
                 <td>Prasanna</td>
                 <td><img src="prasanna.jpg" alt="image" width="50"></td>
-            </tr>
-            
+            </tr>    
             <tr>
                 <td rowspan="4" bgcolor="lightblue">4.</td>
                 <td>Nice</td>
                 <td><img src="nice.jpg" alt="image" width="50"></td>
-                <td rowspan="4" bgcolor="lightyellow">AI/ML project</td>
+                <td rowspan="4" bgcolor="lightyellow"align="center"></td>
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Elite</td>
@@ -160,8 +191,9 @@
                         <tr>
                 <td rowspan="4" bgcolor="lightblue">5.</td>
                 <td>Sushma</td>
-                <td><img src="Sushma.jpeg" alt="image" width="50"></td>
-                <td rowspan="4" bgcolor="lightyellow">AI/ML project</td>
+                <td><img src="sushma.jpg" alt="image" width="50"></td>
+                <td rowspan="4" bgcolor="lightyellow" align="center"></td>
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Gowtham</td>
@@ -179,7 +211,8 @@
                 <td rowspan="3" bgcolor="lightblue">6.</td>
                 <td>Bhavya</td>
                 <td><img src="bhavya.jpg" alt="image" width="50"></td>
-                <td rowspan="3" bgcolor="lightyellow">Vogue nest-a digital clothing hub</td>
+                <td rowspan="3" bgcolor="lightyellow" align="center">Vogue nest-a digital clothing hub</td>
+                 <td rowspan="3"></td>
             </tr>
             <tr>
                 <td>Karthika</td>
@@ -189,12 +222,12 @@
                 <td>Yadel Yonas</td>
                 <td><img src="yadel.jpg" alt="image" width="50"></td>
             </tr>
-            
                         <tr>
                 <td rowspan="4" bgcolor="lightblue">7.</td>
                 <td>Afroz</td>
                 <td><img src="afroz.jpg" alt="image" width="50"></td>
-                <td rowspan="4" bgcolor="lightyellow">Hotel Management System</td>
+                <td rowspan="4" bgcolor="lightyellow" align="center">Hotel Management System</td>
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Rajendra Raju</td>
@@ -212,7 +245,8 @@
                 <td rowspan="3" bgcolor="lightblue">8.</td>
                 <td>Narasimha</td>
                 <td><img src="narasimha.jpg" alt="image" width="50"></td>
-                <td rowspan="3" bgcolor="lightyellow">AI/ML project</td>
+                <td rowspan="3" bgcolor="lightyellow" align="center"></td> 
+                <td rowspan="3"></td>
             </tr>
             <tr>
                 <td>Vijay Kumar</td>
@@ -222,12 +256,12 @@
                 <td>Bhavana</td>
                 <td><img src="bhavana.jpg" alt="image" width="50"></td>
             </tr>
-            
                         <tr>
                 <td rowspan="3" bgcolor="lightblue">9.</td>
                 <td>Guna</td>
                 <td><img src="guna.jpg" alt="image" width="50"></td>
-                <td rowspan="3" bgcolor="lightyellow">AI/ML project</td>
+                <td rowspan="3" bgcolor="lightyellow" align="center"></td>
+                 <td rowspan="3"></td>
             </tr>
             <tr>
                 <td>Madhan</td>
@@ -237,12 +271,12 @@
                 <td>Sailesh</td>
                 <td><img src="sailesh.jpg" alt="image" width="50"></td>
             </tr>
-           
                         <tr>
                 <td rowspan="4" bgcolor="lightblue">10.</td>
                 <td>Kiranmai</td>
                 <td><img src="kiranmai.jpg" alt="image" width="50"></td>
-                <td rowspan="4" bgcolor="lightyellow">AI/ML project</td>
+                <td rowspan="4" bgcolor="lightyellow" align="center"></td>
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Ramya</td>
@@ -260,7 +294,8 @@
                 <td rowspan="4" bgcolor="lightblue">11.</td>
                 <td>Bharath</td>
                 <td><img src="bharath.jpg" alt="image" width="50"></td>
-                <td rowspan="4" bgcolor="lightyellow">E-commerce</td>
+                <td rowspan="4" bgcolor="lightyellow" align="center">E-commerce</td>
+                 <td rowspan="4"></td>
             </tr>
             <tr>
                 <td>Divya</td>
@@ -278,10 +313,5 @@
         </tbody>
     </table>
     </center>
-
 </body>
 </html>
-
-
-
-
